@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Chat Bot</title>
+        <script
+  src="http://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+        <!-- <script src="../function.js"></script> -->
+        <style>
+            form{
+                align-content: center;
+                text-align: center;
+                border: 3px solid green;
+                padding: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>The current ratio for Liberty Medical
+                Group is 0.74, which compared to the
+                baseline of 0.72 indicates the
+                company's ability to service short-term
+                obligations is satisfactory. However the
+                value of the quick ratio will provide a
+                clearer indication of the company's
+                success in this area.</p>
+        <h1>Ask me about the above data</h1>
+        <form>
+            <textarea class="form-control" id="ques" rows="3" placeholder="Ask me"></textarea>
+            <button type="button" id="ask">Ask</button>
+            <br><br>
+            <textarea class="form-control" id="ans" rows="2"></textarea>
+        </form>
+
+
+
+    <script>
+        var question=new Array();
+        var answer=new Array();
+        var i=0;
+
+        question=[0,1,2];
+        answer=[4,5,6];
+        console.log(1);
+        $(document).ready(function(){
+            $('#ask').click(function(){
+                console.log(1);
+                document.getElementById('ques').value=question[i];
+                console.log(question[i]);
+                document.getElementById('ans').value=answer[i];
+                console.log(answer[i]);
+                i++;
+
+            });
+        });
+    </script>
+    </body>
+</html>

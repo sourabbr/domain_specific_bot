@@ -1,0 +1,9 @@
+bedroom
+bedroom
+hallway
+garden
+bedroom
+kitchen
+office
+bathroom
+garden
